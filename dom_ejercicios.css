@@ -64,7 +64,7 @@ img{
     width: 100%;
     opacity:0;
     visibility: hidden;
-    transition:transform 0.3s ease, opacity 0.5s ease;
+    transition:transform 0.3ms ease, opacity 0.5s ease;
     /*que salga de arriba
     transform: translate(0,-100%);
     /*que salga abajo a arriba
