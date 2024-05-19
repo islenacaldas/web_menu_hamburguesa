@@ -1,7 +1,7 @@
 
 import hamburgerMenu from "./menu_hamburguesa.js";
 import { digitalClock, alarma } from "./dom/reloj.js"
-import { moveBall, shortcuts } from "./dom/teclado.js";
+import { moveBall, shortcuts} from "./dom/teclado.js";
 
 const d= document;
 
