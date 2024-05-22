@@ -4,6 +4,7 @@ import { digitalClock, alarma } from "./dom/reloj.js"
 import { moveBall, shortcuts} from "./dom/teclado.js";
 import  countdown from "./dom/cuenta_regresiva.js"
 import scrollTopButton from "./dom/boton_scroll.js";
+import darkTheme from "./dom/tema_obscuro.js/index.js";
 
 const d= document;
 
@@ -15,7 +16,8 @@ d.addEventListener("DOMContentLoaded",e=>{
     "Nov 01, 2024 11:00:00",
      "feliz cumple preciosa 🎉 "
     )
-    scrollTopButton(".scroll-top-btn")
+    scrollTopButton(".scroll-top-btn"),
+    darkTheme(".dark-theme-btn","dark-mode")
 })
 
 d.addEventListener("keydown", e=>{
