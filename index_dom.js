@@ -4,7 +4,7 @@ import { digitalClock, alarma } from "./dom/reloj.js"
 import { moveBall, shortcuts} from "./dom/teclado.js";
 import  countdown from "./dom/cuenta_regresiva.js"
 import scrollTopButton from "./dom/boton_scroll.js";
-import darkTheme from "./dom/tema_obscuro.js/index.js";
+import darkTheme from "./dom/tema_obscuro.js";
 
 const d= document;
 
