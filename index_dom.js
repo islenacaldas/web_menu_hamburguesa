@@ -16,11 +16,11 @@ d.addEventListener("DOMContentLoaded",e=>{
     "Nov 01, 2024 11:00:00",
      "feliz cumple preciosa 🎉 "
     )
-    scrollTopButton(".scroll-top-btn"),
-    darkTheme(".dark-theme-btn","dark-mode")
+    scrollTopButton(".scroll-top-btn")
 })
 
 d.addEventListener("keydown", e=>{
     shortcuts(e);
     moveBall(e, ".ball", ".stage");
 })
+darkTheme(".dark-theme-btn","dark-mode")
