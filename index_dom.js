@@ -5,6 +5,7 @@ import { moveBall, shortcuts} from "./dom/teclado.js";
 import  countdown from "./dom/cuenta_regresiva.js"
 import scrollTopButton from "./dom/boton_scroll.js";
 import darkTheme from "./dom/tema_obscuro.js";
+import responsiveMedia from "./dom/objeto_responsive.js";
 
 const d= document;
 
@@ -17,6 +18,18 @@ d.addEventListener("DOMContentLoaded",e=>{
      "feliz cumple preciosa 🎉 "
     )
     scrollTopButton(".scroll-top-btn")
+    responsiveMedia(
+        "youtube",
+        "(min-width:1024px)",
+         "ContenidoMovil",
+         "ContenidoEscritorio"
+        )
+    responsiveMedia(
+        "gmaps",
+        "(min-width:1024px)",
+        "ContenidoMovil",
+        "ContenidoEscritorio"
+        )
 })
 
 d.addEventListener("keydown", e=>{
