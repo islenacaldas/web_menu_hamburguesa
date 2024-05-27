@@ -15,7 +15,7 @@ w.addEventListener("scroll", e=>{
     }else{
         $scrollBtn.classList.add("hidden")
     }
-    console.log(w.pageYOffset, d.documentElement.scrollTop)
+   // console.log(w.pageYOffset, d.documentElement.scrollTop)
 })
 d.addEventListener("click", e=>{
     if(e.target.matches(btn)){
@@ -26,5 +26,4 @@ d.addEventListener("click", e=>{
         })
     }
 })
-
 }
