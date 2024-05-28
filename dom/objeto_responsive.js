@@ -12,7 +12,7 @@ const responsive=(e)=>{
     }else{
         d.getElementById(id).innerHTML =mobileContet
     }
-    console.log("MQ", e.matches)
+    //console.log("MQ", e.matches)
 }
 breakpoint.addListener(responsive)
 responsive(breakpoint);
