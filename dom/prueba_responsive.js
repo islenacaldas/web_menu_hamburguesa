@@ -15,6 +15,10 @@ d.addEventListener("submit", e=>{
         `innerWidth=${$form.ancho.value}, innerHeight= ${$form.alto.value}`
     )
     }
+d.addEventListener("click", (e)=>{
+    if(e.target === $form.cerrar)tester.close();
+})
+
 })
 
 }
