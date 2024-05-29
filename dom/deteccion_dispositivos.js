@@ -41,4 +41,28 @@ export default function userDeviceInfo(id){
     </ul>
     `;
 
+/*contenido exclusivo*/
+if(isBrowser.chrome()){
+    $id.innerHTML += `<p><mark>Este contenido solo se ve en Chrome </mark></p>`
+}
+
+if(isBrowser.firefox()){
+    $id.innerHTML += `<p><mark>Este contenido solo se ve en firefox </mark></p>`
+}
+if(isDesktop.linux()){
+    $id.innerHTML += `<p><mark>Descarga nuestro software para Linux</mark></p>`
+}
+
+if(isDesktop.mac()){
+    $id.innerHTML += `<p><mark>Descarga nuestro software para Mac os </mark></p>`
+}
+if(isBrowser.windows()){
+    $id.innerHTML += `<p><mark>Descarga nuestro software para Windows </mark></p>`
+}
+/*redirecciones*/
+if(isMobile.android()){
+    window.location.href = "https://youtube.com"
+}
+
+
 }
