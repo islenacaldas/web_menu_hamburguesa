@@ -2,7 +2,7 @@ const d = document,
 n=navigator,
 ua = n.userAgent;
 
-export default function userDeviceInfo(id) {
+export default function userDeviceInfo(id){
     const $id = d.getElementById(id),
     isMobile = {
         android: ()=> ua.match(/android/i),
@@ -33,11 +33,11 @@ export default function userDeviceInfo(id) {
         }
     }
 
-    $id.innerHTML =`
-    <ul>
+    $id.innerHTML =
+    ` <ul>
     <li>User Agent: <b>${ua}</b> </li>
-    <li>Plataforma:  
-    <b>${isMobile.any() ? "Mobile" : (isDesktop.any() ? "Desktop" : "Undefined")}</b></li>
+    <li>Plataforma: <b>${isMobile.any() ? isMobile.any() : isDesktop.any()    
+    }</b></li>
     </ul>
     `;
 

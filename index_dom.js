@@ -36,8 +36,9 @@ d.addEventListener("DOMContentLoaded",e=>{
         `<a href="https://maps.app.goo.gl/sT5vo4Lq8jyYgNYp9" target="_blank" rel="noopener">Ver Mapa</a>`,
         `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127249.70592153331!2d-74.14032187643294!3d4.67342486302138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a7eccfe58f%3A0x99cb72b35351476!2sPlaza%20de%20Bol%C3%ADvar!5e0!3m2!1ses-419!2sco!4v1716823821791!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"`
         )
-    responsiveTester("responsive-tester")
-    userDeviceInfo(".user-device")
+    responsiveTester("responsive-tester");
+
+    userDeviceInfo("user-device")
 })
 
 d.addEventListener("keydown", e=>{
