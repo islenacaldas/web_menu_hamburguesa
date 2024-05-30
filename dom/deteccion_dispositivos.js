@@ -56,7 +56,7 @@ if(isDesktop.linux()){
 if(isDesktop.mac()){
     $id.innerHTML += `<p><mark>Descarga nuestro software para Mac os </mark></p>`
 }
-if(isBrowser.windows()){
+if(isDesktop.windows()) {
     $id.innerHTML += `<p><mark>Descarga nuestro software para Windows </mark></p>`
 }
 /*redirecciones*/

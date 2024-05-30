@@ -193,3 +193,20 @@ visibility: visible;
     background-color: var(--second-color);
     color: var(--main-color);
  }
+ /*******NETWORK STATUS***********/
+ .online,
+ .offline{
+    position: sticky;
+    top: 0;
+    z-index:1000;
+    padding: 1rem;
+    font-size: 1.5 rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #1b5e20;
+    color: #fff;
+ }
+
+ .offline{
+    background-color: #b71c1c;
+ }
