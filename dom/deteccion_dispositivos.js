@@ -64,5 +64,4 @@ if(isMobile.android()){
     window.location.href = "https://youtube.com"
 }
 
-
 }
