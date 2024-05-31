@@ -8,6 +8,7 @@ import darkTheme from "./dom/tema_obscuro.js";
 import responsiveMedia from "./dom/objeto_responsive.js";
 import responsiveTester from "./dom/prueba_responsive.js";
 import userDeviceInfo from "./dom/deteccion_dispositivos.js";
+import webCam from "./dom/deteccion_webcam.js";
 
 const d= document;
 
@@ -38,7 +39,9 @@ d.addEventListener("DOMContentLoaded",e=>{
         )
     responsiveTester("responsive-tester");
 
-    userDeviceInfo("user-device")
+    userDeviceInfo("user-device");
+
+    webCam("webcam");
 })
 
 d.addEventListener("keydown", e=>{
