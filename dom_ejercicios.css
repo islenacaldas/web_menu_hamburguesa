@@ -62,6 +62,7 @@ img{
     right: 0;
     background-color: var(--second-modal-color);
     width: 100%;
+    overflow-y:auto;
     opacity:0;
     visibility: hidden;
     transition:transform 0.3ms ease, opacity 0.5s ease;
