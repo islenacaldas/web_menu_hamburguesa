@@ -15,7 +15,7 @@ export default function draw(btn, selector){
           alert(resultado);
       }
   });
-  
+}
 
   /*para hacer un sorto en tiempo real se debe buscar el selector que nos esta dando el nombre 
   depende para donde estemos buscando hacer el sorteo;
