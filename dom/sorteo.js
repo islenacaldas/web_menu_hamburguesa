@@ -1,7 +1,7 @@
 const d= document;
 
 export default function draw(btn, selector){
-  const getWinnerComment =(selector)=>{
+  const getWinner =(selector)=>{
       const $players = d.querySelectorAll(selector),
       random= Math.floor(Math.random()* $players.length),
       winner =$players[random];
@@ -21,7 +21,9 @@ export default function draw(btn, selector){
   depende para donde estemos buscando hacer el sorteo;
   con comentarios de youtube:
    asi se ve el codigo--> 
-   este se pega en la consola de youtubeconst getWinnerComment =() => {
+   este se pega en la consola de youtube
+   
+   const getWinnerComment =() => {
     const $players = Array.from(document.querySelectorAll('#sections #contents #comment #body'));
     if ($players.length === 0) {
         return 'No hay comentarios.';
@@ -36,4 +38,16 @@ export default function draw(btn, selector){
 
 getWinnerComment("ytb-comment-thread-render")
 
-por ultimo nos da el resultado con un comentario al azar, diciendo que es el o la ganadora*/
+por ultimo nos da el resultado con un comentario al azar, diciendo que es el o la ganadora
+
+
+ const getWinnerComment =(selector)=>{
+      const $players = document.querySelectorAll(selector),
+      random= Math.floor(Math.random()* $players.length),
+      winner =$players[random];
+
+      //console.log($players, random, winner)
+      return `El ganador es: ${winner.textContent}`;
+  }
+
+*/

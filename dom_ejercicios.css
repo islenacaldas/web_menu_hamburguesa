@@ -233,7 +233,7 @@ visibility: visible;
  }
 
  .filter{
-   /*display: none;*/
+   display: none;
    visibility: hidden;
    opacity: 0;
    order: 1;
