@@ -32,6 +32,7 @@ img{
 /******MENU HAMBURGUESA *****/
 .header{
     position: sticky;
+    z-index: 997;
     top: 0;
     padding: 1rem;
     background-color: var(--main-color);
@@ -238,3 +239,58 @@ visibility: visible;
    opacity: 0;
    order: 1;
  }
+
+ /********RESPONSIVE SLIDER**************/
+
+ .slider{
+position: relative;
+width: 60%;
+margin: 1rem auto;
+text-align: center;
+ }
+
+ .slider-slide{
+   position: relative;
+   height: 400px;
+ }
+
+ .slider-slide{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 400px;
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 1s ease;
+   overflow: hidden;
+}
+
+.slider-slide img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+object-position: 50% 0%;
+}
+
+
+.slider-slide.active{
+   opacity: 1;
+   visibility: visible;
+}
+
+.slider a{
+display: block;
+width: 4rem;
+height: 4rem;
+border-radius: 50%;
+border: thin solid #000;
+text-decoration: none;
+background-color: #fff;
+color: #000;
+transition: all 0.3s ease;
+}
+
+.slider-btn{
+   position: absolute;
+}
