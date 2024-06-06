@@ -270,7 +270,7 @@ text-align: center;
 height: 100%;
 width: 100%;
 object-fit: cover;
-object-position: 50% 0%;
+object-position: 50% 50%;
 }
 
 
@@ -291,6 +291,9 @@ color: #000;
 transition: all 0.3s ease;
 }
 
+.slider a:hover{
+   color: #4d4d4d;
+}
 .slider-btn{
    position: absolute;
 }
