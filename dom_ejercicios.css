@@ -301,6 +301,6 @@ transition: all 0.3s ease;
    top: 50%;
    display: flex;
    justify-content: space-between;
-   font-size:3em;
+   font-size:3rem;
    font-weight: bold;
 }

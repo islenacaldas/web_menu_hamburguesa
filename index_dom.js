@@ -50,7 +50,7 @@ d.addEventListener("DOMContentLoaded",e=>{
     getGeolocation("geolocation")
     searchFilters(".card-filter",".card")
     draw("#winner-btn",".player")
-    slider()
+    slider();
 })
 
 d.addEventListener("keydown", e=>{
