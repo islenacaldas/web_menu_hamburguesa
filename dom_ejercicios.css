@@ -362,7 +362,7 @@ transition: all 0.3s ease;
 /************RESPUESTA FORMULARIO*************/
 .contact-form{
    --form-ok-color: rgb(204, 68, 184);
-   --form-error-color:rgb(230, 102, 82);
+   --form-error-color:rgb(14, 13, 13);
    margin-left: auto;
    margin-right: auto;
    width: 80%;
