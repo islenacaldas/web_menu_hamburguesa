@@ -359,3 +359,28 @@ transition: all 0.3s ease;
    }
   
 }
+/************RESPUESTA FORMULARIO*************/
+.contact-form{
+   --form-ok-color: rgb(68, 125, 204);
+   --form-error-color:rgb(230, 154, 82);
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%;
+}
+.contact-form > *{/* con el simbolo: > * todos los elemento que son hijos directos del formulario de contacto, les estoy dando estos estilos*/
+   padding: 0.5rem;
+   margin: 1rem auto;
+   display: block;
+   width: 100%;
+}
+
+.contact-form textarea{
+resize: none;
+}
+
+.contact-form legend,
+.contact-form-response{
+   font-size: 1.5rem;
+   font-weight: bold;
+   text-align: center;
+}
