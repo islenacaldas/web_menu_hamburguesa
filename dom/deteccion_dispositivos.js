@@ -61,7 +61,7 @@ if(isDesktop.windows()) {
 }
 /*redirecciones*/
 if(isMobile.android()){
-    window.location.href = "https://youtube.com"
+    window.location.href = "https://islenacaldas.com"
 }
 
 }
