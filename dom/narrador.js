@@ -31,6 +31,17 @@ export default function speechReader(){
             })
         })
     })
-        d.addEventListener("change", e=>{})
-    d.addEventListener("click", e=>{})
+        d.addEventListener("change", e=>{
+            if(e.target === $speechSelect){
+                speechMessage.voice = voices.find(
+                    voice=> voice.name === e.target.value); 
+            }
+            //console.log(speechMessage)
+        })
+    d.addEventListener("click", e=>{
+        if(e.target === $speechBtn){
+            speechMessage.text = $speechTextArea.value;
+            w.SpeechSynthesis.speak(speechMessage)
+        }
+    })
 }
