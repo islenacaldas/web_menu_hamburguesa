@@ -8,7 +8,7 @@
 
         xhr.addEventListener("readystatechange", e=>{
             if(xhr.readyState !== 4) return;
-            console.log(xhr)
+            //console.log(xhr)
             if(xhr.status>= 200 && xhr.status <300){
             
             console.log("exito")
@@ -35,3 +35,27 @@
 
         xhr.send();
 })()
+
+
+
+(()=>{
+    const $fech = document.getElementsById("fetch"),
+     $fragment = document.createDocumentFragment();
+
+     fetch("https://jsonplaceholder.typicode.com/users")
+     .then(res=>{
+        console.log(res);
+        return res.json()
+    })
+    .then(json=>{
+       console.log(json) 
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
+    .finally(()=>
+        console.log(
+            "esto se ejecutara independientemente del resultado de la promesa Fetch"
+        )
+    );
+})();
