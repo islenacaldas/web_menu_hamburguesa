@@ -39,19 +39,27 @@
 
 
 (()=>{
-    const $fech = document.getElementsById("fetch"),
+    const $fetch = document.getElementById("fetch"),
      $fragment = document.createDocumentFragment();
 
      fetch("https://jsonplaceholder.typicode.com/users")
-     .then(res=>{
-        console.log(res);
-        return res.json()
-    })
-    .then(json=>{
+     .then((res)=> (res.ok ? res.json(): Promise.reject(res)))
+        //console.log(res);
+    .then((json)=>{
        console.log(json) 
+       json.forEach((el)=>{
+        const $li = document.createElement("li");
+        $li.innerHTML = `${el.name} --${el.email} --${el.phone}`;
+        $fragment.appendChild($li)
+       })
+
+       $fetch.appendChild($fragment)
     })
     .catch((err)=>{
         console.log(err)
+        //fetch.innerHTML = json;
+        let message = err.statusText || "ocurrio un error";
+        $fetch.innerHTML = `Error ${err.status}: ${message}`
     })
     .finally(()=>
         console.log(
